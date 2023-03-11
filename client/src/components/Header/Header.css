@@ -1,0 +1,91 @@
+.header{
+    min-width: 500px;
+    min-height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    box-shadow: 0 2px 4px rgb(81 107 152 / 16%);
+}
+.innerContainer{
+    align-items:center;
+}
+.innerContainer2{
+    width: 650px;
+    align-items: center;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    opacity: initial;
+    background-color: #FFFFFF;
+}
+.header__image img {
+    width: 15rem;
+}
+
+
+.ic{
+    font-size: 30px;
+    color: #FF8500;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.ic:focus{
+    outline: 0;
+}
+.innerContainer2    a{
+    color:#3B455A ;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 20px;
+    font-family:Lato,sans-serif;
+    font-weight: bold;
+    
+}
+.innerContainer2    a:hover{
+    color:#FF8500 ;
+}
+
+.btn_header:hover{
+    background-color: #FF8500;
+}
+.btn_header:active{
+    border:3px solid #516cf0;
+}
+
+.showSignUp{
+
+    display: block !important;
+}
+
+.hideSignUp{
+    display: none !important ;
+}
+
+.showLogIn{
+    display: block !important;
+}
+
+.hideLogIn{
+    display: none !important;
+}
+.loginHeader{
+    display: inline-block;
+    width:160px ;
+    height: 40px;
+    background-color: #FF8500;
+    border: none;
+    border-radius:4px ;
+    font-weight: 400px;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 2rem;
+    margin: 1rem;
+    padding-top: 6px;
+}
+.loginHeader:hover{
+  color: white !important;
+  background-color: #516cf0;
+}
