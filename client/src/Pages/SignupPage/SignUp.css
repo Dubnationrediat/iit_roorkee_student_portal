@@ -126,3 +126,15 @@ input[type] {
 	display: block;
 	margin: 2% 40% !important;
 }
+
+.forSuccessPage{
+	background-image: url("../../Images/photoCollections/aashish-singh-Cms-91q0FZM-unsplash.jpg");
+	width: 70%;
+	margin: 7% auto;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	height: 400px;
+	font-size: 30px;
+	text-align: center;
+	padding: 124px;
+}

@@ -18,13 +18,13 @@ console.log(process.env.REACT_APP_PORT1);
 let server = `http://localhost:6500`;
 let url = `${server}/user/register`;
 
-const SignUp = () => {
-  const [response, setresponse] = useState();
+const SignUp = () => { 
+  const [response, setresponse] = useState();  
   //* for confirm password not pasting
   const [password, setPassword] = useState('');
   // **********icon part *********
   const [type, setType] = useState("password");
-  // to change type attribute from 'password' to 'text' and vice versa
+  //* to change type attribute from 'password' to 'text' and vice versa
   const [icon, setIcon] = useState(eyeOff);
   const [userData, setUserData] = useState({
     user_first_name: "",
@@ -73,14 +73,18 @@ const SignUp = () => {
         data: userFile,
       })
         .then((data) => {
-          setresponse(data);
-          console.log(data)
+          setresponse(data.data);
+        
         })
         .catch((err) => {
           console.log(err);
         });
     }else{
-      setresponse("Passwords Doesn't Match")
+      setresponse(
+      {successMessage:"Passwords Doesn't Match",
+        redirect : "/signup"
+      }
+        )
     }
   };
 
@@ -139,7 +143,7 @@ const SignUp = () => {
       <div className="forSuccessPage">
         <h1 className="thankYou">{response.successMessage}</h1>
         <a className="thankYouAnch" href={`${response.redirect}`}>
-          Click Here To LogIn
+          Click Here To Go Back To Registration Page
         </a>
       </div>
     );
@@ -232,7 +236,7 @@ const SignUp = () => {
                 onChange={handleChange}
                 name="Confirm_Password"
                 autoComplete="new-password"
-                type="text"
+                type="password"
                 onPaste={handlePaste}
                 placeholder="Confirm Password"
               />

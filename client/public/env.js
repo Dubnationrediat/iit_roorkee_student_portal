@@ -3,7 +3,7 @@ window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "APPDATA": "C:\\Users\\Rediat\\AppData\\Roaming",
   "asl.log": "Destination=file",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_10656_BVMRNOZPICAPSPBX",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_8448_IOBEXUYTFRWJIWZL",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
@@ -16,6 +16,8 @@ window.env = {
   "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
   "EDITOR": "notepad.exe",
   "EXEPATH": "C:\\Program Files\\Git\\bin",
+  "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+  "FPS_BROWSER_USER_PROFILE_STRING": "Default",
   "GIT_ASKPASS": "c:\\Users\\Rediat\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
   "HOME": "C:\\Users\\Rediat",
   "HOMEDRIVE": "C:",
@@ -100,6 +102,5 @@ window.env = {
   "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Rediat\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-f88400e91f-sock",
   "WINDIR": "C:\\Windows",
-  "_": "C:/Program Files/nodejs/node.exe",
-  "__COMPAT_LAYER": "DetectorsAppHealth"
+  "_": "C:/Program Files/nodejs/node.exe"
 };
