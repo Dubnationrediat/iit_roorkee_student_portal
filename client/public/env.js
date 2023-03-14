@@ -51,7 +51,7 @@ window.env = {
   "npm_config_user_agent": "npm/9.5.0 node/v18.15.0 win32 ia32 workspaces/false",
   "npm_execpath": "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
   "npm_lifecycle_event": "start",
-  "npm_lifecycle_script": "react-dotenv && react-scripts  start",
+  "npm_lifecycle_script": "react-dotenv && react-scripts --openssl-legacy-provider start",
   "npm_node_execpath": "C:\\Program Files (x86)\\nodejs\\node.exe",
   "npm_package_json": "D:\\MY_PROJECTS\\iit_roorkee_student_portal\\client\\package.json",
   "npm_package_name": "client",
