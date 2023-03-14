@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import dotenv from 'dotenv';
+
 import "./SignUp.css";
 //* to import icons
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 import Ethiopia from '../../Images/countryFlags/Ethiopia_flag.png'
-
-dotenv.config({
-  path:"../../../.env"
-})
-console.log(process.env.REACT_APP_PORT1);
-
 //* initializing dotenv
 let server = `http://localhost:6500`;
 let url = `${server}/user/register`;
@@ -36,10 +30,23 @@ const SignUp = () => {
     user_nationality:"",
     Confirm_Password:""
   });
+ //* get emails from backend 
+const [emails, setEmails] = useState();
 
-  // to change the icon when clicked
+let emailCatcher = async ()=>{
+  let getEmailUrl = `localhost:6500/admin/getSingleEmail`
+   await axios({
+       method :'get',
+       url : getEmailUrl
+     }).then((email)=>{
+     console.log(email)
+     })
+}
+
+
+  //* to change the icon when clicked
   const HandleIconChange = () => {
-    // event listen for Password function
+    //* event listen for Password function
     if (type === "password") {
       setIcon(eye);
       setType("text");
@@ -55,8 +62,12 @@ const SignUp = () => {
     setPassword('');
   };
 
-  const formSubmitter = (e) => {
+  const formSubmitter =  (e) => {
     e.preventDefault();
+
+
+
+    
     if(userData.user_password === userData.Confirm_Password){
       let userFile = {
         user_first_name :userData.user_first_name,
